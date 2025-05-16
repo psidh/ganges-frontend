@@ -1,7 +1,5 @@
 "use client";
-import Button from "@/components/Button";
 import { FaPeopleRobbery } from "react-icons/fa6";
-import { FaApple, FaWindows, FaLinux } from "react-icons/fa";
 import { TbBulb } from "react-icons/tb";
 import { LuPartyPopper } from "react-icons/lu";
 
@@ -28,45 +26,48 @@ const featureCards = [
 
 export default function AboutPage() {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center px-6 py-12 bg-black">
-      <div className="relative max-w-7xl w-full pt-36">
-        {/* Background Image */}
+    <div className="relative w-full min-h-screen bg-black flex items-center justify-center px-4 sm:px-6 md:px-12 py-12">
+      {/* Background Image */}
+      <div className="relative max-w-7xl w-full mt-16 md:mt-24 p-8">
         <img
           src="/assets/orange.png"
           alt="Background"
-          className="w-full h-[1000px] rounded-xl object-cover brightness-80 rotate-0"
+          className="absolute inset-0 w-full h-full object-cover object-center brightness-75 rounded-xl pointer-events-none"
+          aria-hidden="true"
         />
 
         {/* Content Overlay */}
-        <div className="absolute inset-0 p-12 flex flex-col items-start justify-center text-white max-w-7xl mx-auto space-y-12 font-medium">
+        <div className="relative z-10 max-w-7xl w-full flex flex-col space-y-12 md:space-y-16 text-white font-medium">
           <section>
-            <h1 className="text-5xl font-bold mb-8">About </h1>
-            <p className="mb-6 text-lg leading-relaxed">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
+              About
+            </h1>
+            <p className="mb-4 sm:mb-6 text-base sm:text-lg leading-relaxed w-full">
               Ganges is a dynamically typed, interpreted programming language
               crafted with love, blending the ancient beauty of{" "}
               <span className="font-semibold text-orange-300">Sanskrit</span>{" "}
               and the clarity of English in its syntax.
             </p>
-            <div className="flex justify-between items-center gap-4 my-4 bg-orange-900/60 backdrop-blur-xl p-1 rounded-lg">
-              <hr className="w-[2px] h-[50px] border border-orange-400 ml-1" />
-              <div>
-                <p className="text-lg leading-relaxed font-semibold italic text-orange-200">
-                  I created Ganges because I wanted to breathe life into
-                  Sanskrit, to write more in this timeless, profound language.
-                  The culture of Bharat has always inspired me deeply, and
-                  through this project, I aim to honor its legacy.
-                </p>
-              </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 my-4 bg-orange-900/60 backdrop-blur-xl p-4 rounded-lg w-full">
+              <hr className="w-full sm:w-1 sm:h-[50px] border border-orange-400" />
+              <p className="text-base sm:text-lg leading-relaxed font-semibold italic text-orange-200">
+                I created Ganges because I wanted to breathe life into Sanskrit,
+                to write more in this timeless, profound language. The culture
+                of Bharat has always inspired me deeply, and through this
+                project, I aim to honor its legacy.
+              </p>
             </div>
-            <p className="text-lg leading-relaxed">
+
+            <p className="text-base sm:text-lg leading-relaxed w-full">
               Programming and compiler design fascinated me from the start.
               Driven by sheer curiosity and passion, I built Ganges to combine
               the art of language with the science of computation.
             </p>
           </section>
 
-          {/* Feature Cards Section */}
-          <section className="flex flex-col lg:flex-row gap-8">
+          {/* Feature Cards */}
+          <section className="flex flex-col lg:flex-row gap-6 w-full w-full">
             {featureCards.map(({ title, icon: Icon, description }) => (
               <div
                 key={title}
@@ -74,28 +75,26 @@ export default function AboutPage() {
               >
                 <Icon className="text-4xl text-orange-400" />
                 <h2 className="text-2xl font-bold">{title}</h2>
-                <p className="text-white font-semibold text-sm">
+                <p className="text-white font-semibold text-base">
                   {description}
                 </p>
               </div>
             ))}
           </section>
 
-          <section>
-            <p className="mb-6 text-lg leading-relaxed">
-              This project is a reflection of my ambition to merge culture with
-              modern technology, to create something unique that celebrates the
-              past while pushing forward into the future.
-            </p>
-            <p className="mb-6 text-lg leading-relaxed">
-              Whether you're a programmer, a language enthusiast, or simply
-              curious, I hope Ganges inspires you to explore the infinite
-              possibilities at the intersection of code and culture.
-            </p>
-            <p className="text-xl text-right text-gray-300 w-full mt-12">
-              ~ Sidharth | Developer
-            </p>
-          </section>
+          <p className="mb-4 sm:mb-6 text-base sm:text-lg leading-relaxed">
+            This project is a reflection of my ambition to merge culture with
+            modern technology, to create something unique that celebrates the
+            past while pushing forward into the future.
+          </p>
+          <p className="mb-4 sm:mb-6 text-base sm:text-lg leading-relaxed">
+            Whether you're a programmer, a language enthusiast, or simply
+            curious, I hope Ganges inspires you to explore the infinite
+            possibilities at the intersection of code and culture.
+          </p>
+          <p className="text-base sm:text-lg text-right text-gray-300 mt-6">
+            ~ Sidharth | Developer
+          </p>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <>
       {/* Hero Section with Animated Background */}
-      <div className="relative w-screen h-screen overflow-hidden">
+      <div className="relative  h-screen overflow-hidden">
         {/* Background Animation */}
         <UnicornBackground />
 
