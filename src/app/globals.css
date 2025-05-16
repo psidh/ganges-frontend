@@ -24,3 +24,62 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.rainbow-border-wrapper {
+  position: relative;
+  padding: 2px;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+.rainbow-border-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    270deg,
+    red,
+    green,
+    blue,
+    indigo,
+    violet,
+    orange,
+    yellow,
+    red
+  );
+  background-size: 400% 400%;
+  animation: rainbow 2s linear infinite;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rainbow-border-wrapper:hover::before {
+  opacity: 1;
+}
+
+.rainbow-button {
+  position: relative;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background: white; /* or dynamic bg */
+  color: black; /* or dynamic text */
+  z-index: 1;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
