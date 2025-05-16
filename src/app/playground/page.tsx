@@ -18,7 +18,7 @@ export default function PlaygroundPage() {
     setOutput("");
 
     try {
-      const res = await fetch("http://localhost:3001/execute", {
+      const res = await fetch("https://ganges-28hc.onrender.com/execute", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code }),
