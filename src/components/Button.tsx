@@ -6,6 +6,7 @@ interface ButtonProps {
   text: string;
   icon?: React.ElementType;
   onClick: () => void;
+  className : string
 }
 
 export default function Button({
@@ -14,12 +15,13 @@ export default function Button({
   text,
   icon: Icon,
   onClick: onClick,
+  className : className
 }: ButtonProps) {
   return (
     <div className="rainbow-border-wrapper">
       <button
         onClick={onClick}
-        className="rainbow-button"
+        className={`rainbow-button ${className}`}
         style={{
           backgroundColor: background,
           color: text,

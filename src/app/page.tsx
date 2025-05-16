@@ -34,6 +34,7 @@ export default function Page() {
               onClick={function () {
                 router.push("/docs");
               }}
+              className=""
             />
             <Button
               name="GitHub"
@@ -43,6 +44,7 @@ export default function Page() {
               onClick={function () {
                 router.push("https://github.com/psidh/Ganges");
               }}
+              className=""
             />
           </div>
         </div>
@@ -78,8 +80,9 @@ export default function Page() {
                 text="Playground"
                 key={"Playground"}
                 onClick={function () {
-                router.push("/playground");
-              }}
+                  router.push("/playground");
+                }}
+                className=""
               />
             </div>
           </div>

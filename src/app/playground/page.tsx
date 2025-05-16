@@ -7,7 +7,7 @@ const MonacoEditor = dynamic(() => import("@monaco-editor/react"), {
   ssr: false,
 });
 
-export default function Home() {
+export default function PlaygroundPage() {
   const [code, setCode] = useState("");
   const [output, setOutput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -38,42 +38,61 @@ export default function Home() {
   }
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-neutral-900 text-white px-4">
-      <h1 className="text-4xl font-semibold my-16">Ganges Code PlayGround</h1>
-      <form
-        onSubmit={handleSubmit}
-        className="w-full max-w-5xl bg-neutral-800 p-6 rounded-lg shadow-lg"
-      >
-        <MonacoEditor
-          height="400px"
-          defaultLanguage="rust" // change to your Ganges syntax if you want or keep js for now
-          theme="vs-dark" // you can switch to "dracula" or other if you add custom theme
-          value={code}
-          onChange={(value: any) => setCode(value)}
-          options={{
-            fontSize: 16,
-            minimap: { enabled: false },
-            wordWrap: "on",
-            automaticLayout: true,
-            tabSize: 2,
-          }}
+    <div className="w-full min-h-screen flex items-center justify-center px-6 ">
+      <div className="relative max-w-7xl w-full mt-36">
+        {/* Background Image */}
+        <img
+          src="/assets/cyan.png"
+          alt="Playground Background"
+          className="w-full lg:h-[650px] rounded-xl object-cover opacity-90"
         />
-        <div className="mt-4 flex justify-between items-center">
-          <button
-            type="submit"
-            disabled={loading}
-            className="px-6 py-2 bg-white text-black font-semibold rounded-lg disabled:bg-black"
-          >
-            {loading ? "Running..." : "Run Code"}
-          </button>
+
+        {/* Foreground Content */}
+        <div className="">
+          <div className="absolute inset-0 p-8 flex flex-col text-white">
+            <h1 className="text-6xl font-semibold mb-2">Playground</h1>
+
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col lg:flex-row gap-6 mt-6 w-full"
+            >
+              {/* Left - Code Editor */}
+              <div className="backdrop-blur-md bg-white/10 p-4 rounded-xl shadow-lg w-full lg:w-1/2 flex flex-col h-[500px]">
+                <div className="flex-1 overflow-hidden rounded-lg">
+                  <MonacoEditor
+                    height="100%"
+                    defaultLanguage="rust"
+                    theme="vs-dark"
+                    value={code}
+                    onChange={(value: any) => setCode(value)}
+                    options={{
+                      fontSize: 16,
+                      minimap: { enabled: false },
+                      wordWrap: "on",
+                      automaticLayout: true,
+                      tabSize: 2,
+                    }}
+                  />
+                </div>
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="mt-4 px-6 py-2 bg-white text-black font-semibold rounded-lg disabled:bg-black cursor-pointer hover:bg-black hover:text-white transition duration-500"
+                >
+                  {loading ? "Running..." : "Run Code"}
+                </button>
+              </div>
+
+              {/* Right - Output */}
+              <div className="backdrop-blur-md bg-white/10 p-4 rounded-xl shadow-lg w-full lg:w-1/2 h-[500px] overflow-y-auto">
+                <pre className="font-semibold whitespace-pre-wrap break-words text-white text-sm h-full">
+                  {output || "Output will appear here..."}
+                </pre>
+              </div>
+            </form>
+          </div>
         </div>
-      </form>
-      <pre
-        className="mt-6 w-full max-w-5xl p-6 bg-neutral-800 text-white rounded-lg shadow-lg whitespace-pre-wrap break-words"
-        style={{ minHeight: "150px" }}
-      >
-        {output}
-      </pre>
-    </main>
+      </div>
+    </div>
   );
 }
