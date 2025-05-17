@@ -4,7 +4,7 @@ export default function DocsPage() {
       <div className="w-full flex items-center justify-start ">
         <div className="relative w-full">
           <img
-            src="/assets/Docs.png"
+            src="/assets/docs.png"
             alt="download"
             className="w-full h-[800px] lg:h-[150px] rounded-xl object-cover"
           />
