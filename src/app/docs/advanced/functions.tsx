@@ -12,9 +12,9 @@ export default function Functions() {
   const [copied, setCopied] = useState<boolean>(false);
   const code = `rama aashirvad = kriya(god) {
   yadi (god == "vishnu") {
-    vadah("Narayana! Narayana!");
+    vadha("Narayana! Narayana!");
   } anyatha {
-    vadah("Namah Parvati Patair, Har Har Mahadev!");
+    vadha("Namah Parvati Patair, Har Har Mahadev!");
   }
 };
 
@@ -86,7 +86,7 @@ aashirvad("mahadev");`;
             <span className="text-green-500">"vishnu"</span>) &#123;
           </p>
           <p>
-            3       <span className="text-blue-400">vadah</span>(
+            3       <span className="text-blue-400">vadha</span>(
             <span className="text-green-500">"Narayana! Narayana!"</span>
             );
           </p>
@@ -94,7 +94,7 @@ aashirvad("mahadev");`;
             4     &#125; <span className="text-pink-500">anyatha</span> &#123;
           </p>
           <p>
-            5       <span className="text-blue-400">vadah</span>(
+            5       <span className="text-blue-400">vadha</span>(
             <span className="text-green-500">
               "Namah Parvati Patair, Har Har Mahadev!"
             </span>
@@ -130,7 +130,7 @@ aashirvad("mahadev");`;
           </li>
           <li>Functions can be assigned to variables and passed around.</li>
           <li>
-            Use <span className="text-blue-400">vadah()</span> to print output.
+            Use <span className="text-blue-400">vadha()</span> to print output.
           </li>
         </ul>
       </div>

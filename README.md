@@ -15,12 +15,12 @@ VISIT : [Official Website](https://ganges.psidharth.dev)
 
 Visit Download section for complete details : [Download Section](https://ganges.psidharth.dev/downloads)
 
-
 ### Run the repl
 
 ```bash
 gangesMac
 ```
+
 ---
 
 VISIT Docs for extensive info : [Official Docs](https://ganges.psidharth.dev/docs)
@@ -32,7 +32,7 @@ VISIT Docs for extensive info : [Official Docs](https://ganges.psidharth.dev/doc
 | Variable       | `rama`             | Declare a variable   |
 | Function       | `kriya`            | Define a function    |
 | If / Else      | `yadi` / `anyatha` | Conditional logic    |
-| Print          | `vadah`            | Console output       |
+| Print          | `vadha`            | Console output       |
 | While loop     | `chakra`           | Loop construct       |
 | Return         | `daan`             | Return from function |
 | Boolean values | `satya` / `asatya` | true / false         |
@@ -46,14 +46,14 @@ VISIT Docs for extensive info : [Official Docs](https://ganges.psidharth.dev/doc
 ```ganges
 rama x = 10;
 rama y = 20;
-vadah(x + y); // 30
+vadha(x + y); // 30
 ```
 
 ### Functions
 
 ```ganges
 rama greet = kriya(name) {
-  vadah("Namaste, " + name);
+  vadha("Namaste, " + name);
 };
 greet("Sita");
 ```
@@ -66,7 +66,7 @@ rama mood = yadi (5 > 3) {
 } anyatha {
   "sad"
 };
-vadah(mood); // happy
+vadha(mood); // happy
 ```
 
 ### Loops
@@ -74,7 +74,7 @@ vadah(mood); // happy
 ```ganges
 rama i = 0;
 chakra (i < 5) {
-  vadah(i);
+  vadha(i);
   i = i + 1;
 };
 ```

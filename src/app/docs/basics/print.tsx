@@ -10,9 +10,9 @@ const geistMono = Geist_Mono({
 
 export default function Print() {
   const [copied, setCopied] = useState<boolean>(false);
-  const code = `vadah("Namaste!");
-vadah("My name is Sidharth");
-vadah("Ganges flows strong");`;
+  const code = `vadha("Namaste!");
+vadha("My name is Sidharth");
+vadha("Ganges flows strong");`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code).then(() => {
@@ -31,7 +31,7 @@ vadah("Ganges flows strong");`;
         To print output in <span className="ganges">Ganges</span>, use the
         keyword{" "}
         <span className={"text-pink-500 font-medium " + geistMono.className}>
-          vadah
+          vadha
         </span>
         . This function prints to the console.
       </p>
@@ -66,15 +66,15 @@ vadah("Ganges flows strong");`;
           }
         >
           <p>
-            1   <span className="text-pink-500 ">vadah</span>(
+            1   <span className="text-pink-500 ">vadha</span>(
             <span className="text-[#00ca50]">"Namaste!"</span>);
           </p>
           <p>
-            2   <span className="text-pink-500 ">vadah</span>(
+            2   <span className="text-pink-500 ">vadha</span>(
             <span className="text-[#00ca50]">"My name is Sidharth"</span>);
           </p>
           <p>
-            3   <span className="text-pink-500 ">vadah</span>(
+            3   <span className="text-pink-500 ">vadha</span>(
             <span className="text-[#00ca50]">"Ganges flows strong"</span>);
           </p>
         </div>

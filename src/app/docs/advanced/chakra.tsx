@@ -12,7 +12,7 @@ export default function Chakra() {
   const [copied, setCopied] = useState<boolean>(false);
   const code = `rama count = 0;
 chakra (count < 3) {
-  vadah("Spin the chakra");
+  vadha("Spin the chakra");
   count = count + 1;
 };`;
 
@@ -76,7 +76,7 @@ chakra (count < 3) {
             <span className="text-blue-400">count &lt; 3</span>) &#123;
           </p>
           <p>
-            3     <span className="text-pink-500">vadah</span>(
+            3     <span className="text-pink-500">vadha</span>(
             <span className="text-[#00ca50]">"Spin the chakra"</span>);
           </p>
           <p>

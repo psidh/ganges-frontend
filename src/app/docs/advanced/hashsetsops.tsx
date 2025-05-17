@@ -11,11 +11,11 @@ export default function HashsetOps() {
   const [copied, setCopied] = useState(false);
   const code = `rama gods = hashset("shiva");
 
-vadah(gods.has("shiva"));
+vadha(gods.has("shiva"));
 gods.add("vishnu");
-vadah(gods.has("vishnu"));
+vadha(gods.has("vishnu"));
 gods.remove("shiva");
-vadah(gods.has("shiva"));`;
+vadha(gods.has("shiva"));`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code).then(() => {
@@ -64,7 +64,7 @@ vadah(gods.has("shiva"));`;
             <span className="text-green-500">"shiva"</span>);
           </p>
           <p>
-            3   <span className="text-blue-400">vadah</span>(gods.
+            3   <span className="text-blue-400">vadha</span>(gods.
             <span className="text-yellow-300">has</span>(
             <span className="text-green-500">"shiva"</span>));
           </p>
@@ -73,7 +73,7 @@ vadah(gods.has("shiva"));`;
             <span className="text-green-500">"vishnu"</span>);
           </p>
           <p>
-            5   <span className="text-blue-400">vadah</span>(gods.
+            5   <span className="text-blue-400">vadha</span>(gods.
             <span className="text-yellow-300">has</span>(
             <span className="text-green-500">"vishnu"</span>));
           </p>
@@ -82,7 +82,7 @@ vadah(gods.has("shiva"));`;
             <span className="text-green-500">"shiva"</span>);
           </p>
           <p>
-            7   <span className="text-blue-400">vadah</span>(gods.
+            7   <span className="text-blue-400">vadha</span>(gods.
             <span className="text-yellow-300">has</span>(
             <span className="text-green-500">"shiva"</span>));
           </p>

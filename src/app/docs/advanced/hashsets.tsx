@@ -12,8 +12,8 @@ export default function Hashsets() {
   const [copied, setCopied] = useState<boolean>(false);
   const code = `rama gods = hashset("vishnu", "shiva", "brahma");
 
-vadah(gods.contains("shiva"));
-vadah(gods.contains("kali"));`;
+vadha(gods.contains("shiva"));
+vadha(gods.contains("kali"));`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code).then(() => {
@@ -69,12 +69,12 @@ vadah(gods.contains("kali"));`;
             <span className="text-green-500">"brahma"</span>);
           </p>
           <p>
-            3   <span className="text-blue-400">vadah</span>(gods.
+            3   <span className="text-blue-400">vadha</span>(gods.
             <span className="text-yellow-300">contains</span>(
             <span className="text-green-500">"shiva"</span>));
           </p>
           <p>
-            4   <span className="text-blue-400">vadah</span>(gods.
+            4   <span className="text-blue-400">vadha</span>(gods.
             <span className="text-yellow-300">contains</span>(
             <span className="text-green-500">"kali"</span>));
           </p>

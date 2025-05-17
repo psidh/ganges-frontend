@@ -15,8 +15,8 @@ export default function Hashmaps() {
   "destroyer": "shiva",
 };
 
-vadah(gods["preserver"]);
-vadah(gods["destroyer"]);`;
+vadha(gods["preserver"]);
+vadha(gods["destroyer"]);`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code).then(() => {
@@ -76,11 +76,11 @@ vadah(gods["destroyer"]);`;
           </p>
           <p>   {"}"};</p>
           <p>
-            5   <span className="text-blue-400">vadah</span>(gods[
+            5   <span className="text-blue-400">vadha</span>(gods[
             <span className="text-green-500">"preserver"</span>]);
           </p>
           <p>
-            6   <span className="text-blue-400">vadah</span>(gods[
+            6   <span className="text-blue-400">vadha</span>(gods[
             <span className="text-green-500">"destroyer"</span>]);
           </p>
         </div>

@@ -12,8 +12,8 @@ export default function Arrays() {
   const [copied, setCopied] = useState<boolean>(false);
   const code = `rama gods = ["vishnu", "shiva", "brahma"];
 
-vadah(gods[0]);
-vadah(gods[1]);`;
+vadha(gods[0]);
+vadha(gods[1]);`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code).then(() => {
@@ -74,10 +74,10 @@ vadah(gods[1]);`;
             <span className="text-green-500">"brahma"</span>];
           </p>
           <p>
-            2   <span className="text-blue-400">vadah</span>(gods[0]);
+            2   <span className="text-blue-400">vadha</span>(gods[0]);
           </p>
           <p>
-            3   <span className="text-blue-400">vadah</span>(gods[1]);
+            3   <span className="text-blue-400">vadha</span>(gods[1]);
           </p>
         </div>
       </div>

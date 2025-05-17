@@ -28,7 +28,7 @@ chakra(left <= right){
   }
 }
 
-vadah(found);`;
+vadha(found);`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code).then(() => {
@@ -121,7 +121,7 @@ vadah(found);`;
           <p>19     {"}"} </p>
           <p>20   {"}"}</p>
           <p>
-            22   <span className="text-blue-400">vadah</span>(found);
+            22   <span className="text-blue-400">vadha</span>(found);
           </p>
         </div>
       </div>
@@ -177,7 +177,7 @@ export function Recursion() {
   daan n * factorial(n - 1);
 }
 
-vadah(factorial(5));`;
+vadha(factorial(5));`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code).then(() => {
@@ -234,7 +234,7 @@ vadah(factorial(5));`;
           <p>5     daan n * factorial(n - 1);</p>
           <p>6   {"}"}</p>
           <p>
-            8   <span className="text-blue-400">vadah</span>(factorial(5));
+            8   <span className="text-blue-400">vadha</span>(factorial(5));
           </p>
         </div>
       </div>

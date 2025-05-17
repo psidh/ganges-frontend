@@ -27,7 +27,7 @@ export default function Page() {
     daan n * factorial(n - 1);
   }
 
-  vadah(factorial(5));`;
+  vadha(factorial(5));`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code).then(() => {
@@ -41,7 +41,8 @@ export default function Page() {
       <div className="relative h-screen overflow-hidden">
         <UnicornBackground />
 
-        <div className="relative z-20 flex flex-col h-screen lg:flex-row items-center 
+        <div
+          className="relative z-20 flex flex-col h-screen lg:flex-row items-center 
           justify-between px-6 sm:px-12 md:px-20 lg:px-32 gap-12 lg:gap-0 pt-24 lg:pt-0"
         >
           {/* Left Text Content */}
@@ -119,7 +120,7 @@ export default function Page() {
               <p>5     daan n * factorial(n - 1);</p>
               <p>6   {"}"}</p>
               <p>
-                8   <span className="text-blue-400">vadah</span>(factorial(5));
+                8   <span className="text-blue-400">vadha</span>(factorial(5));
               </p>
             </div>
           </div>
