@@ -30,5 +30,5 @@ export default function UnicornBackground() {
     };
   }, []);
 
-  return <div id="unicorn-bg" className="absolute inset-0 z-0" />;
+  return <div id="unicorn-bg" className="absolute inset-0 z-0 opacity-30 md:opacity-100" />;
 }
