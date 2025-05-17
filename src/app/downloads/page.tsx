@@ -19,14 +19,14 @@ const downloadOptions: DownloadOption[] = [
       "Download and install Ganges for macOS. Includes universal build for Intel and Apple Silicon.",
     buttonText: "Download for Apple",
     instructions: (
-      <>
+      <div className="bg-black/20 backdrop-blur-md p-2 rounded-xl">
         <p className="mt-2 text-sm text-white/80">
           After downloading, open Terminal and run:
         </p>
-        <pre className="bg-black/30 p-2 rounded text-xs mt-1 font-mono">
-          chmod +x ./myapp-macos{"\n"}./myapp-macos
+        <pre className="p-2 rounded text-xs mt-1 font-medium">
+          chmod +x ./ganges-max{"\n"}./ganges-mac
         </pre>
-      </>
+      </div>
     ),
   },
   {
@@ -36,12 +36,12 @@ const downloadOptions: DownloadOption[] = [
       "Download the Windows installer (.exe) for seamless setup and usage.",
     buttonText: "Download for Windows",
     instructions: (
-      <>
+      <div className="bg-black/20 backdrop-blur-md p-2 rounded-xl">
         <p className="mt-2 text-sm text-white/80">
           Run the downloaded <code>.exe</code> file and follow the installer
           prompts.
         </p>
-      </>
+      </div>
     ),
   },
   {
@@ -51,14 +51,14 @@ const downloadOptions: DownloadOption[] = [
       "Download the Ganges CLI binary or install via package manager.",
     buttonText: "Download for Linux",
     instructions: (
-      <>
-        <p className="mt-2 text-sm text-white/80">
+      <div className="bg-black/20 backdrop-blur-md p-2 rounded-xl">
+        <p className="mt-2 text-sm text-white/80 font-semibold">
           After downloading, open Terminal and run:
         </p>
-        <pre className="bg-black/30 p-2 rounded text-xs mt-1 font-mono">
-          chmod +x ./myapp-linux{"\n"}./myapp-linux
+        <pre className="p-2 rounded text-xs mt-1 font-medium">
+          chmod +x ./ganges-linux{"\n"}./ganges-linux
         </pre>
-      </>
+      </div>
     ),
   },
 ];
@@ -87,7 +87,7 @@ export default function Page(): React.ReactNode {
             </p>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-6 mt-12">
+          <div className="flex flex-col lg:flex-row justify-between gap-6 mt-12">
             {downloadOptions.map(
               ({ os, icon: Icon, description, buttonText, instructions }) => (
                 <div
