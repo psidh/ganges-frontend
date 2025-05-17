@@ -46,7 +46,7 @@ export default function DocsPage() {
         </h2>
         <div>
           As you have installed Ganges, Let us explore the language now.{" "}
-          <a href="/basics" className="link">
+          <a href="/docs/basics" className="link">
             Learn more
           </a>
         </div>

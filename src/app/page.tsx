@@ -1,5 +1,5 @@
 "use client";
-import { FaPlay } from "react-icons/fa";
+import { FaBook, FaPlay } from "react-icons/fa";
 import { FaComputerMouse } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import UnicornBackground from "@/components/Background";
@@ -11,92 +11,46 @@ export default function Page() {
   return (
     <>
       {/* Hero Section with Animated Background */}
-      <div className="relative  h-screen overflow-hidden">
+      <div className="relative h-screen overflow-hidden">
         {/* Background Animation */}
         <UnicornBackground />
 
         {/* Foreground Content */}
-        <div className="relative z-20 flex flex-col justify-center items-start h-full px-32 gap-10">
-          <h1 className="text-9xl font-medium text-black drop-shadow-lg">
+        <div
+          className="relative z-20 flex flex-col justify-center items-start h-full 
+                        px-6 sm:px-12 md:px-20 lg:px-32 gap-6 md:gap-10 max-w-full"
+        >
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium text-black drop-shadow-lg leading-tight max-w-full">
             Ganges
           </h1>
-          <p className="text-xl text-neutral-900 font-normal max-w-2xl">
-            A programming language — inspired by Sanskrit, built for clarity,
-            simplicity, and fun.
+          <p className="text-base sm:text-lg md:text-xl text-neutral-900 font-normal max-w-full sm:max-w-xl md:max-w-2xl">
+            A programming language —{" "}
+            <span className="md:text-black text-white">inspired </span>by
+            Sanskrit, built for clarity, simplicity, and fun.
           </p>
 
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-4 md:gap-6">
             <Button
-              name="Watch Demo"
+              name="Docs"
               background="white"
               text="black"
-              icon={FaPlay}
-              onClick={function () {
-                router.push("/docs");
-              }}
-              className=""
+              icon={FaBook}
+              onClick={() => router.push("/docs")}
+              className="flex-shrink-0"
             />
             <Button
               name="GitHub"
               background="black"
               text="white"
               icon={FaGithub}
-              onClick={function () {
-                router.push("https://github.com/psidh/Ganges");
-              }}
-              className=""
+              onClick={() => router.push("https://github.com/psidh/Ganges")}
+              className="flex-shrink-0"
             />
           </div>
         </div>
       </div>
 
-      {/* Playground Section */}
-      <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-        {/* Rotated background */}
-        <div
-          className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url("/assets/line.jpeg")',
-            transform: "rotate(90deg)",
-            transformOrigin: "center",
-            width: "100%",
-            height: "100%",
-          }}
-        />
-
-        {/* Black overlay */}
-        <div className="absolute inset-0 bg-black opacity-20 pointer-events-none z-10" />
-
-        {/* Foreground content */}
-        <div className="relative z-20 w-full max-w-7xl mx-auto px-12 flex items-center justify-between">
-          {/* Left content */}
-          <div className="flex flex-col items-start justify-center gap-6 text-white max-w-xl">
-            <h2 className="text-7xl font-semibold mb-6">Go to PlayGround</h2>
-            <div className="flex gap-6">
-              <Button
-                background="white"
-                name="Playground"
-                icon={FaComputerMouse}
-                text="Playground"
-                key={"Playground"}
-                onClick={function () {
-                  router.push("/playground");
-                }}
-                className=""
-              />
-            </div>
-          </div>
-
-          {/* Right image */}
-          <div className="hidden lg:block">
-            <img
-              src="/assets/code1.png"
-              alt="Illustration"
-              className="w-[500px] h-auto object-cover bg-[#282A35] p-4 rounded-2xl saturate-0 hover:saturate-100 transition-all duration-300"
-            />
-          </div>
-        </div>
-      </div>
+     
     </>
   );
 }

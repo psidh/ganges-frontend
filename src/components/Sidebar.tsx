@@ -10,7 +10,7 @@ export default function Sidebar() {
       </div>
       <div className="flex flex-col  gap-3">
         <p className="font-medium text-lg">Basics</p>
-        <a href="/docs/basics/#nomenclature" className="sidebar-p">Nomenclature</a>
+        <a href="/docs/basics" className="sidebar-p">Nomenclature</a>
         <a href="/docs/basics/#variables" className="sidebar-p">Variables</a>
         <a href="/docs/basics/#data-types" className="sidebar-p">Data Types</a>
         <a href="/docs/basics/#arithmetic" className="sidebar-p">Arithmetic</a>
@@ -19,7 +19,7 @@ export default function Sidebar() {
       </div>
       <div className="flex flex-col gap-3">
         <p className="font-medium text-lg">Advanced</p>
-        <a href="/docs/advanced/#loops" className="sidebar-p">Loops</a>
+        <a href="/docs/advanced" className="sidebar-p">Loops</a>
         <a href="/docs/advanced/#functions" className="sidebar-p">Functions</a>
         <a href="/docs/advanced/#arrays" className="sidebar-p">Arrays</a>
         <a href="/docs/advanced/#hashmaps" className="sidebar-p">HashMaps</a>

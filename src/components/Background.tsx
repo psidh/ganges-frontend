@@ -16,7 +16,7 @@ export default function UnicornBackground() {
           projectId: "XVsfsYsOdhYqafH7oLoF",
           scale: 1,
           dpi: 1.5,
-          fps: 60,
+          fps: 120,
         });
       }
     };
