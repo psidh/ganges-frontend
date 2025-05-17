@@ -54,7 +54,7 @@ export default function Page() {
                 >
                   <Icon className="text-3xl" />
                   <h2 className="text-xl font-bold">{os}</h2>
-                  <p className="text-sm text-white font-semibold">
+                  <p className="text-sm text-white font-medium">
                     {description}
                   </p>
                   <Button

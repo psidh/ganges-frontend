@@ -20,7 +20,7 @@ export default function Page() {
           <h1 className="text-9xl font-medium text-black drop-shadow-lg">
             Ganges
           </h1>
-          <p className="text-xl text-neutral-600 font-medium max-w-2xl">
+          <p className="text-xl text-neutral-900 font-normal max-w-2xl">
             A programming language — inspired by Sanskrit, built for clarity,
             simplicity, and fun.
           </p>
@@ -71,7 +71,7 @@ export default function Page() {
         <div className="relative z-20 w-full max-w-7xl mx-auto px-12 flex items-center justify-between">
           {/* Left content */}
           <div className="flex flex-col items-start justify-center gap-6 text-white max-w-xl">
-            <h2 className="text-7xl font-bold mb-6">Go to PlayGround</h2>
+            <h2 className="text-7xl font-semibold mb-6">Go to PlayGround</h2>
             <div className="flex gap-6">
               <Button
                 background="white"

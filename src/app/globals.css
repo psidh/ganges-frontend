@@ -83,3 +83,34 @@ body {
     background-position: 100% 50%;
   }
 }
+
+@layer components {
+  .sidebar-p {
+    @apply font-normal text-base text-neutral-400/70 ml-4 cursor-pointer hover:text-white hover:translate-x-0.5 transition-all duration-300;
+  }
+
+  .link {
+    @apply bg-neutral-700/50 text-neutral-200 font-medium hover:text-blue-500 transition-all duration-300 py-[2px] px-2 rounded-lg;
+  }
+
+  .docs-header {
+    @apply text-4xl font-medium mb-8;
+  }
+
+  .docs-subheader {
+    @apply my-8 underline underline-offset-8 font-medium decoration-neutral-700/50 text-2xl;
+  }
+
+  .ganges {
+    @apply text-blue-400 font-medium;
+  }
+
+  th,
+  td {
+    @apply border border-neutral-700 px-4 py-2 text-neutral-300;
+  }
+
+  tr {
+    @apply hover:bg-neutral-800 transition-colors;
+  }
+}
