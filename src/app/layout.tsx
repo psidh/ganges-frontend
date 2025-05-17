@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Geist } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import NavBar from "@/components/Navbar";
 
 const plusJakarta = Geist({
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body className={`${plusJakarta.className} antialiased`}>
         <NavBar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
