@@ -18,10 +18,10 @@ export default function Button({
   className : className
 }: ButtonProps) {
   return (
-    <div className="rainbow-border-wrapper">
+    <div className="rainbow-border-wrapper cursor-pointer">
       <button
         onClick={onClick}
-        className={`rainbow-button ${className}`}
+        className={`rainbow-button cursor-pointer ${className}`}
         style={{
           backgroundColor: background,
           color: text,

@@ -1,5 +1,5 @@
 "use client";
-import { FaBook, FaPlay } from "react-icons/fa";
+import { FaBook, FaMouse, FaPlay } from "react-icons/fa";
 import { FaComputerMouse } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import UnicornBackground from "@/components/Background";
@@ -31,12 +31,20 @@ export default function Page() {
 
           <div className="flex flex-wrap gap-4 md:gap-6">
             <Button
-              name="Docs"
+              name="PlayGround"
               background="white"
               text="black"
+              icon={FaMouse}
+              onClick={() => router.push("/playground")}
+              className="flex-shrink-0 cursor-pointer"
+            />
+            <Button
+              name="Docs"
+              background="white"
+              text="blue"
               icon={FaBook}
               onClick={() => router.push("/docs")}
-              className="flex-shrink-0"
+              className="flex-shrink-0 cursor-pointer"
             />
             <Button
               name="GitHub"
@@ -44,7 +52,7 @@ export default function Page() {
               text="white"
               icon={FaGithub}
               onClick={() => router.push("https://github.com/psidh/Ganges")}
-              className="flex-shrink-0"
+              className="flex-shrink-0 cursor-pointer"
             />
           </div>
         </div>
