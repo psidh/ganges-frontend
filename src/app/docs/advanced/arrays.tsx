@@ -49,7 +49,7 @@ vadha(gods[1]);`;
         <div className="flex justify-between items-center gap-4 py-2 px-3 w-full bg-neutral-900">
           <div className="flex items-center justify-start gap-4">
             <img src="/ganges-logo.svg" alt="" className="w-5 h-5" />
-            <p className="text-neutral-500 text-lg">app/array.go</p>
+            <p className="text-neutral-500 text-lg">app/array.ga</p>
           </div>
           <button
             onClick={handleCopy}
