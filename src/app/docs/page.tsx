@@ -6,7 +6,7 @@ export default function DocsPage() {
           <img
             src="/assets/docs.png"
             alt="download"
-            className="w-full h-[800px] lg:h-[150px] rounded-xl object-cover"
+            className="w-full h-[150px] rounded-xl object-cover"
           />
 
           <div className="absolute p-4 inset-0 flex flex-col justify-between text-white sm:pt-6">

@@ -39,7 +39,7 @@ vadah(gods.contains("kali"));`;
         <code>.contains(value)</code>.
       </p>
 
-      <div className="flex flex-col items-start justify-start w-[600px] border border-neutral-800 rounded-xl">
+      <div className="flex flex-col items-start justify-start w-[310px] lg:w-[600px] border border-neutral-800 rounded-xl">
         <div className="flex justify-between items-center gap-4 py-2 px-3 w-full bg-neutral-900">
           <div className="flex items-center justify-start gap-4">
             <img src="/ganges-logo.svg" alt="" className="w-5 h-5" />

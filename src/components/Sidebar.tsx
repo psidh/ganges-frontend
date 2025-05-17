@@ -2,7 +2,8 @@ import React from "react";
 
 export default function Sidebar() {
   return (
-    <div className="flex flex-col items- gap-4 md:border-r-[2px]  md:border-r-neutral-700 ">
+    <div className="text-center">
+      <div className="flex flex-col gap-4 md:border-r-[2px] md:w-full md:border-r-neutral-700 md:h-auto h-56 overflow-y-scroll overflow-x-hidden custom-scrollbar">
       <div className="flex flex-col gap-3">
         <p className="font-medium text-lg">Getting Started</p>
         <a href="/docs/#installation" className="sidebar-p">Installation</a>
@@ -28,6 +29,7 @@ export default function Sidebar() {
         <p className="font-medium text-lg">Fun</p>
         <a href="/docs/fun" className="sidebar-p">Algorithms</a>
       </div>
+    </div>
     </div>
   );
 }

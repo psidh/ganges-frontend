@@ -50,7 +50,7 @@ vadah(found);`;
       </p>
 
       {/* Code Block */}
-      <div className="flex flex-col items-start justify-start w-[600px] border border-neutral-800 rounded-xl">
+      <div className="flex flex-col items-start justify-start w-[310px] lg:w-[600px] border border-neutral-800 rounded-xl">
         <div className="flex justify-between items-center gap-4 py-2 px-3 w-full bg-neutral-900">
           <div className="flex items-center justify-start gap-4">
             <img src="/ganges-logo.svg" alt="" className="w-5 h-5" />
@@ -102,9 +102,12 @@ vadah(found);`;
             target) {" {"}
           </p>
           <p>
-            11       <span className="text-pink-500">rama</span> found = <span className="text-purple-400">satya</span>;
+            11       <span className="text-pink-500">rama</span> found ={" "}
+            <span className="text-purple-400">satya</span>;
           </p>
-          <p>12       <span className="text-pink-500">rama</span> left  = right;</p>
+          <p>
+            12       <span className="text-pink-500">rama</span> left = right;
+          </p>
           <p>13     {"}"}</p>
           <p>
             15     <span className="text-yellow-300">yadi</span>(items[mid] &lt;
@@ -196,7 +199,7 @@ vadah(factorial(5));`;
       </p>
 
       {/* Code Block */}
-      <div className="flex flex-col items-start justify-start w-[600px] border border-neutral-800 rounded-xl">
+      <div className="flex flex-col items-start justify-start w-[310px] lg:w-[600px] border border-neutral-800 rounded-xl">
         <div className="flex justify-between items-center gap-4 py-2 px-3 w-full bg-neutral-900">
           <div className="flex items-center justify-start gap-4">
             <img src="/ganges-logo.svg" alt="" className="w-5 h-5" />
@@ -269,8 +272,8 @@ vadah(factorial(5));`;
             Return Keyword
           </h4>
           <p className="text-neutral-400">
-            Use <code>daan</code> to return values from functions. This
-            is how recursion bubbles back results.
+            Use <code>daan</code> to return values from functions. This is how
+            recursion bubbles back results.
           </p>
         </div>
       </div>

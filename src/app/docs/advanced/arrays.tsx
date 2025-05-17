@@ -29,9 +29,9 @@ vadah(gods[1]);`;
       </h2>
 
       <p className="mt-4 mb-2">
-        Arrays in <span className="ganges">Ganges</span> are created using square
-        brackets <code>[]</code>. They can store multiple values in order.
-        Access elements using zero-based indexing.
+        Arrays in <span className="ganges">Ganges</span> are created using
+        square brackets <code>[]</code>. They can store multiple values in
+        order. Access elements using zero-based indexing.
       </p>
 
       <p className="mb-4">
@@ -45,7 +45,7 @@ vadah(gods[1]);`;
         </span>
       </p>
 
-      <div className="flex flex-col items-start justify-start w-[600px] border border-neutral-800 rounded-xl">
+      <div className="flex flex-col items-start justify-start w-[310px] lg:w-[600px] border border-neutral-800 rounded-xl">
         <div className="flex justify-between items-center gap-4 py-2 px-3 w-full bg-neutral-900">
           <div className="flex items-center justify-start gap-4">
             <img src="/ganges-logo.svg" alt="" className="w-5 h-5" />
@@ -68,7 +68,8 @@ vadah(gods[1]);`;
           }
         >
           <p>
-            1   <span className="text-pink-500">rama</span> gods = [<span className="text-green-500">"vishnu"</span>,{" "}
+            1   <span className="text-pink-500">rama</span> gods = [
+            <span className="text-green-500">"vishnu"</span>,{" "}
             <span className="text-green-500">"shiva"</span>,{" "}
             <span className="text-green-500">"brahma"</span>];
           </p>
@@ -92,10 +93,17 @@ vadah(gods[1]);`;
       <div className="mt-6 w-[600px] border border-neutral-800 bg-neutral-950 p-4 rounded-xl text-sm">
         <h3 className="text-md font-semibold mb-2 text-neutral-200">Notes</h3>
         <ul className="list-disc pl-4 text-neutral-400">
-          <li>Arrays are defined using <code>[]</code>.</li>
-          <li>Indexing starts from <code>0</code>.</li>
+          <li>
+            Arrays are defined using <code>[]</code>.
+          </li>
+          <li>
+            Indexing starts from <code>0</code>.
+          </li>
           <li>Arrays can be nested or passed to functions.</li>
-          <li>Use <code>gods.length</code> (if supported) to get length. (Coming soon)</li>
+          <li>
+            Use <code>gods.length</code> (if supported) to get length. (Coming
+            soon)
+          </li>
         </ul>
       </div>
 

@@ -54,7 +54,7 @@ aashirvad("mahadev");`;
         </span>
       </p>
 
-      <div className="flex flex-col items-start justify-start w-[600px] border border-neutral-800 rounded-xl">
+      <div className="flex flex-col items-start justify-start w-[310px] lg:w-[600px] border border-neutral-800 rounded-xl">
         <div className="flex justify-between items-center gap-4 py-2 px-3 w-full bg-neutral-900">
           <div className="flex items-center justify-start gap-4">
             <img src="/ganges-logo.svg" alt="" className="w-5 h-5" />
@@ -112,14 +112,14 @@ aashirvad("mahadev");`;
       {/* Terminal Output */}
       <div className="mt-6 w-[600px] bg-black text-[#00ca50] font-mono text-sm p-4 rounded-xl border border-neutral-800">
         <p className="font-semibold mb-4 text-lg">$ Terminal (zsh)</p>
-        <p className="text-white">{">>  "}Namah Parvati Patair, Har Har Mahadev!</p>
+        <p className="text-white">
+          {">>  "}Namah Parvati Patair, Har Har Mahadev!
+        </p>
       </div>
 
       {/* Notes */}
       <div className="mt-6 w-[600px] border border-neutral-800 bg-neutral-950 p-4 rounded-xl text-sm">
-        <h3 className="text-md font-semibold mb-2 text-neutral-200">
-          Note
-        </h3>
+        <h3 className="text-md font-semibold mb-2 text-neutral-200">Note</h3>
         <ul className="list-disc pl-4 text-neutral-400">
           <li>
             Functions are declared using{" "}
