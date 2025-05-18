@@ -56,7 +56,7 @@ export default function AboutPage() {
               >
                 Writing an interpreter in Go
               </a>
-              . The book is a hands-on guide on how to build an interpreter from
+              . The book is a hands-on guide on how to build an interpreter from scratch.
               I am deeply grateful to <a href="" className="font-bold">Mr. Thorsten Ball</a>, as without him this
               would not have been possible. I also want to thank <a href="https://x.com/shbhtngpl" className="font-bold">@Shobhit Nagpal</a> for initial motivation and idea.
             </p>
